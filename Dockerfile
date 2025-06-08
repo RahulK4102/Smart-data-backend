@@ -15,7 +15,7 @@ RUN pip install --upgrade pip \
 RUN mkdir -p project_root/data project_root/outputs project_root/mapped
 
 # Expose the port Gunicorn will run on
-EXPOSE 8000
+EXPOSE 80
 
 # Start the app using Gunicorn
 CMD ["gunicorn", "--bind", "0.0.0.0:8000", "main:app"]
