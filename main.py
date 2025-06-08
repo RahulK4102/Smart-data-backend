@@ -19,15 +19,15 @@ from docx import Document
 
 app = Flask(__name__)
 CORS(app, resources={
-    r"/extract_insight": {"origins": "http://localhost:3000"},
-    r"/process_dataset": {"origins": "http://localhost:3000"},
-    r"/analyze_data": {"origins": "http://localhost:3000"},
-    r"/clean_data": {"origins": "http://localhost:3000"},
-    r"/column_mapping": {"origins": "http://localhost:3000"},
-    r"/perform_mapping": {"origins": "http://localhost:3000"},
-    r"/report_gen": {"origins": "http://localhost:3000"},
-    r"/remove_outlier": {"origins": "http://localhost:3000"},
-    r"/chat_bot": {"origins": "http://localhost:3000"}
+    r"/extract_insight": {"origins": "https://smart-data-analyst-62qb0qpcy-rahuls-projects-9739712c.vercel.app/"},
+    r"/process_dataset": {"origins": "https://smart-data-analyst-62qb0qpcy-rahuls-projects-9739712c.vercel.app/"},
+    r"/analyze_data": {"origins": "https://smart-data-analyst-62qb0qpcy-rahuls-projects-9739712c.vercel.app/"},
+    r"/clean_data": {"origins": "https://smart-data-analyst-62qb0qpcy-rahuls-projects-9739712c.vercel.app/"},
+    r"/column_mapping": {"origins": "https://smart-data-analyst-62qb0qpcy-rahuls-projects-9739712c.vercel.app/"},
+    r"/perform_mapping": {"origins": "https://smart-data-analyst-62qb0qpcy-rahuls-projects-9739712c.vercel.app/"},
+    r"/report_gen": {"origins": "https://smart-data-analyst-62qb0qpcy-rahuls-projects-9739712c.vercel.app/"},
+    r"/remove_outlier": {"origins": "https://smart-data-analyst-62qb0qpcy-rahuls-projects-9739712c.vercel.app/"},
+    r"/chat_bot": {"origins": "https://smart-data-analyst-62qb0qpcy-rahuls-projects-9739712c.vercel.app/"}
 })
 
 # Increase the file size limit to 1 GB
